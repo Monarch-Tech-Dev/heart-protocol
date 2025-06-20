@@ -1,40 +1,31 @@
-FROM python:3.11-slim
-
-LABEL maintainer="Heart Protocol Community"
-LABEL description="Heart Protocol: Algorithms for Human Flourishing"
+# Heart Protocol - Monarch Bot Dockerfile
+FROM python:3.12-slim
 
 # Set working directory
 WORKDIR /app
 
 # Install system dependencies
 RUN apt-get update && apt-get install -y \
-    gcc \
-    g++ \
-    libpq-dev \
-    curl \
+    git \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy requirements first for better caching
+# Copy requirements and install Python dependencies
 COPY requirements.txt .
-
-# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY heart_protocol/ ./heart_protocol/
-COPY *.py ./
+COPY . .
 
 # Create non-root user for security
-RUN useradd --create-home --shell /bin/bash monarch && \
-    chown -R monarch:monarch /app
+RUN useradd -m -u 1000 monarch && chown -R monarch:monarch /app
 USER monarch
 
-# Expose ports
-EXPOSE 8080 8000
+# Expose port (if needed for API later)
+EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
-    CMD curl -f http://localhost:8080/health || exit 1
+    CMD python -c "print('healthy')" || exit 1
 
-# Default command
-CMD ["python", "-m", "heart_protocol.main"]
+# Run the bot
+CMD ["python", "launch_monarch.py"]

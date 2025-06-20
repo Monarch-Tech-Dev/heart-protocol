@@ -18,7 +18,7 @@ Heart Protocol is an **open-source caring algorithm system** that can be impleme
 
 ### **🤖 Meet Monarch**
 
-**Monarch** is Heart Protocol's gentle AI companion living on Bluesky (@monarch.bsky.social) - proof that technology can be a force for healing.
+**Monarch** is Heart Protocol's gentle AI companion living on Bluesky (@monarchbot.bsky.social) - proof that technology can be a force for healing.
 
 ---
 
@@ -59,7 +59,7 @@ Heart Protocol is an **open-source caring algorithm system** that can be impleme
 ### **Experience Heart Protocol**
 
 **On Bluesky:**
-1. Follow [@monarch.bsky.social](https://bsky.app/profile/monarch.bsky.social)
+1. Follow [@monarchbot.bsky.social](https://bsky.app/profile/monarchbot.bsky.social)
 2. Subscribe to Heart Protocol feeds
 3. Experience caring algorithms in action
 
@@ -325,7 +325,7 @@ Heart Protocol operates on a **"Love-First" funding model** - we build healing t
 ### **Community**
 - **Discord:** [discord.gg/heart-protocol](https://discord.gg/heart-protocol)
 - **GitHub Discussions:** [Community Q&A](https://github.com/your-org/heart-protocol/discussions)
-- **Bluesky:** [@monarch.bsky.social](https://bsky.app/profile/monarch.bsky.social)
+- **Bluesky:** [@monarchbot.bsky.social](https://bsky.app/profile/monarchbot.bsky.social)
 
 ### **Professional**
 - **General:** hello@heart-protocol.org

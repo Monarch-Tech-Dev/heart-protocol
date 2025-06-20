@@ -4,6 +4,9 @@
 .env.production
 *.key
 *.pem
+*.pub
+heartkey*
+botheart*
 secrets/
 config/production.json
 docker-compose.override.yml

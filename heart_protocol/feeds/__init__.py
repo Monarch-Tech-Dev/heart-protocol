@@ -11,4 +11,5 @@ Specialized caring feed implementations:
 from .daily_gentle_reminders import *
 from .hearts_seeking_light import *
 from .guardian_energy_rising import *
-from .community_wisdom import *
+from .community_wisdom import CommunityWisdomFeed
+from .gentle_reminders import GentleRemindersFeed
