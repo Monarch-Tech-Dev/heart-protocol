@@ -323,7 +323,6 @@ Heart Protocol operates on a **"Love-First" funding model** - we build healing t
 ## 📞 **Contact & Support**
 
 ### **Community**
-- **Discord:** [discord.gg/heart-protocol](https://discord.gg/heart-protocol)
 - **GitHub Discussions:** [Community Q&A](https://github.com/your-org/heart-protocol/discussions)
 - **Bluesky:** [@monarchbot.bsky.social](https://bsky.app/profile/monarchbot.bsky.social)
 
